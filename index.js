@@ -23,7 +23,7 @@ const promoDex = require("./Dex/Promo.json");
 
 client.cfg = new Object({
   prefix: '!',
-  token: 'OTE1OTE3NTYxODk4NjE4OTAx.G3Asjw.c1lWvUTrqXzlDWyDaULybqUqFKbGM9be6KD3ig',
+  token: config.TOKEN || process.env.TOKEN ,
 });
 
 process.on("unhandledRejection", _ => console.error(_.stack + '\n' + '='.repeat(20)));
